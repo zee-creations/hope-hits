@@ -65,6 +65,43 @@ p {
 img {
 	max-width: 100%;
 }
+.abt{
+  
+  width: 90%;
+  background: #cc1573;
+  background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
+  background: linear-gradient(-90deg, #cc1573, #ffe400); 
+}
+.logo{
+    position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 33px;
+	height: 51px;
+	z-index: 1;
+    color: red !importyant;
+    font-family: cursive;
+    font-size: 36px;
+}
+.logo a.d-flex.flex-row span{
+    color: #f5dbff;
+}
+.fix{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+ h2.color-gd.text-center{
+    margin: 20px 5px 20px 5px;
+}
+.w-bg{
+  background: white !important;
+    height: 10px !important;
+}
 
 input:focus,
 select:focus,
@@ -78,13 +115,30 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
+.cta-b{
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border: 2px solid #ffe400;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.030em;
+    margin-top: 2rem;
+}
+.cta-b:hover{
+    background-color: #ffff;
+}
 
 ul,
 ol {
 	padding: 0;
 	margin: 0;
 }
-
+.color-gd{
+    background: linear-gradient(-90deg, #cc1573, #ffe400); 
+    opacity: 0.75;
+}
+    
+}
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -110,14 +164,23 @@ ol {
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+    display: inline-block;
 }
 
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	
 }
-
+.f{
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	position: fixed !important;
+	z-index: 10;
+}
 .spad {
 	padding-top: 85px;
 	padding-bottom: 85px;
@@ -439,9 +502,9 @@ ol {
 ---------------------*/
 
 .header-section {
-	background: #212121;
+	
 	padding: 0 33px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px dotted #8c4b8a;
 }
 
 .header-warp {
@@ -533,7 +596,20 @@ ol {
 .header-social-links a:first-child {
 	margin-left: 0;
 }
-
+.header-social-links a i .fa fa-twitter :hover{
+    background-color: blue;
+}
+#tw:hover{
+    background-color: royalblue;
+}#s:hover{
+    background-color: coral;
+}#in:hover{
+    background-color: orangered;
+}#fb:hover{
+    background-color: blue;
+}#yt:hover{
+    background-color: firebrick;
+}
 /*------------------
   Hero section
 ---------------------*/
@@ -574,6 +650,9 @@ ol {
 	display: inline-block;
 	padding-top: 12px;
 	font-size: 20px;
+	position: relative;
+	top: 100px !important;
+	
 }
 
 .hero-slider .owl-nav .owl-next {
@@ -619,7 +698,7 @@ ol {
 	display: block;
 	margin-bottom: 5px;
 	position: relative;
-	top: 50px;
+	top: 100px;
 	opacity: 0;
 }
 
@@ -660,12 +739,10 @@ ol {
 	margin-top: -167px;
 }
 .white{
-	background-color: #fff;
+	background-color: #dee2e6de;
 }
 .white:hover{
-	background-color: #000;
-	-webkit-transition: all 0.6s;
-	transition: all 0.4s;
+	background-color: #212529de;
 }
 .space{
 	margin-top: 5px;
@@ -691,8 +768,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #000 ;
-	opacity: 0.75;
+	background: #39129469 ;
 	z-index: 1;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -948,6 +1024,8 @@ ol {
 .page-info-section .section-title h2 {
 	font-size: 72px;
 	padding-bottom: 0;
+    color: salmon;
+    font-weight: 400;
 }
 
 /*------------------
@@ -969,9 +1047,9 @@ ol {
 }
 
 .ab-content {
-	padding-top: 55px;
-	padding-right: 50px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 .ab-content h4 {
@@ -980,8 +1058,9 @@ ol {
 }
 
 .ab-content p {
-	font-size: 16px;
+	font-size: 20px;
 	margin-bottom: 0;
+    color:darkgrey;
 }
 
 .video-preview-section {
@@ -1177,10 +1256,10 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #000;
+	background: #2dbfd6;
 	opacity: 0.5;
 	-webkit-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
+	transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
 }
 
 .dj-single:hover:after {
@@ -1742,27 +1821,30 @@ ol {
 @media only screen and (max-width: 767px) {
 	.header-section {
 		padding: 15px 20px;
-		position: relative;
+		position: fixed;
+        background-image: linear-gradient(to right, #35557fc4, #343a4045);
+        
+        width: 100%;
+        z-index: 3
+        
 	}
 	.header-social-links {
 		display: none;
 	}
 	.nav-switch {
-		position: absolute;
-		height: 100%;
+		position: fixed;
 		right: 30px;
-		top: 0;
 		display: block;
-		float: right;
 		font-size: 32px;
-		color: #fff;
+		color: #fff900de;
 		cursor: pointer;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
-		align-items: center;
+        
+		
 	}
 	.main-menu {
 		display: none;
@@ -1866,6 +1948,21 @@ ol {
 		float: right;
 		clear: inherit;
 	}
+    .page-info-section{
+        height: 230px;
+        padding-top: 50px;
+    }
+    .page-info-section .section-title h2{
+        font-size: 35px;
+        color: darkblue;
+        background: white;
+        font-family: cursive;
+        margin-top: 68px;
+        }
+    .cta-b{
+        padding: 1rem;
+        margin: 5px; 
+    }
 }
 .img-stayle:after {
     position: absolute;
@@ -1879,3 +1976,10 @@ ol {
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease
 }
+
+
+.mt-15{
+    margin-top: 50px;
+}
+
+
