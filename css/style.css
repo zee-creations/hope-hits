@@ -102,12 +102,28 @@ img {
   background: white !important;
     height: 10px !important;
 }
+.weekly_text p{
+    padding: 10px;
+}
+button#play.site-btn{
+    margin-bottom: 5px;
+    background-color:  #ffc107;
+    color: #191919;
+}
+button#play.site-btn:hover{
+    background-color: #ffe400;
+    color: #212329c4;
+    transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
 
 input:focus,
 select:focus,
 button:focus,
 textarea:focus {
 	outline: none;
+}
+.btn-sm.cta-b.mr-5 a{
+    color: #00ff5c;
 }
 
 a:hover,
@@ -116,15 +132,16 @@ a:focus {
 	outline: none;
 }
 .cta-b{
-  color: red;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
   border: 2px solid #ffe400;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.030em;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .cta-b:hover{
-    background-color: #ffff;
+    background-color: rgba(91, 15, 123, 0.25);
 }
 
 ul,
@@ -595,20 +612,19 @@ ol {
 .header-social-links a:first-child {
 	margin-left: 0;
 }
-.header-social-links a i .fa fa-twitter :hover{
-    background-color: blue;
+.header-social-links a:hover{
+    background-color: green;
 }
-#tw:hover{
-    background-color: royalblue;
-}#s:hover{
+.s:hover{
     background-color: coral;
-}#in:hover{
+}.in:hover{
     background-color: orangered;
-}#fb:hover{
+}.fb:hover{
     background-color: blue;
-}#yt:hover{
+}.yt:hover{
     background-color: firebrick;
 }
+
 /*------------------
   Hero section
 ---------------------*/
@@ -978,6 +994,8 @@ ol {
 	font-weight: 500;
 	color: #ffe400;
 }
+.bw-content p a{
+color: red !important ;}
 
 .ft-contact-widget p {
 	font-size: 16px;
@@ -1255,7 +1273,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #2dbfd6;
+	background: #963e72e6;
 	opacity: 0.5;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
@@ -1980,5 +1998,43 @@ ol {
 .mt-15{
     margin-top: 50px;
 }
+
+.p a{
+    color:  #ff005c;
+}
+.text-wrap p > a {
+    color: #00ff5c;
+    
+}
+.section-title{
+animation-duration: 35s;
+}
+#g2{
+    animation-duration: 53s;
+    animation-iteration-count: infinite;
+}
+.btn-sm.cta-b{
+    flex-basis: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
